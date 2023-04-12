@@ -1,0 +1,26 @@
+EXEMPLO DE SERVO CONECTADO A ESP8266
+
+number:
+  - platform: template
+    name: Servo Control
+    min_value: -100
+    max_value: 100
+    step: 1
+    optimistic: true
+    set_action:
+      then:
+        - servo.write:
+            id: my_servo
+            level: !lambda 'return x / 100.0;'
+
+servo:
+   - id: my_servo
+     output: pwm_output
+
+# Example output platform
+# On ESP32, use ledc output
+output:
+  - platform: esp8266_pwm
+    id: pwm_output
+    pin: D6
+    frequency: 50 Hz
