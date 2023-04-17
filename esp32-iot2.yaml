@@ -1,0 +1,80 @@
+esphome:
+  name: esp32-iot2
+  friendly_name: ESP32_IoT2
+
+esp32:
+  board: nodemcu-32s
+  framework:
+    type: arduino
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: "your_password"
+
+ota:
+  password: "your_password"
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Esp32-Iot2 Fallback Hotspot"
+    password: "your_password"
+
+captive_portal:
+
+sensor:
+    platform: dht
+    model: DHT11
+    pin: GPIO4
+    temperature:
+      name: "temperatura AR"
+      id: "temp"
+    humidity:
+      name: "humedadaroaraul"
+      id: "hum"
+    update_interval: 5s
+
+switch:
+    platform: gpio
+    name: "Relearoaraul"
+    pin: GPIO26
+       
+
+light:
+  - platform: binary
+    name: "luzled"
+    output: light_output
+
+output:
+  - id: light_output
+    platform: gpio
+    pin:
+      number: GPIO16 
+      inverted: true      
+
+binary_sensor:
+  - platform: gpio
+    pin: GPIO17
+    name: "botón_aroaraul"
+    device_class: window   
+
+i2c:
+  sda: GPIO21
+  scl: GPIO22
+
+display:
+  platform: lcd_pcf8574
+  dimensions: 16x2
+  address: 0x27
+  lambda:
+    it.printf(2, 0, "%.1f", id(temp).state);
+    it.printf(2, 1, "%.1f", id(hum).state);
+    it.print(0, 0, "T=");
+    it.print(0, 1, "H=");      
