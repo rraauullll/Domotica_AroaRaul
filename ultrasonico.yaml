@@ -1,0 +1,11 @@
+EXEMPLO SENSOR HC-SR04 
+
+https://esphome.io/components/sensor/ultrasonic.html
+
+ - platform: ultrasonic
+    trigger_pin: GPIO5
+    echo_pin: GPIO23
+    name: "Ultrasonic Sensor"
+    id: "dist"
+    update_interval: 1s
+
