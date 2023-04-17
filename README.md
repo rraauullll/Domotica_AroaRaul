@@ -1,4 +1,4 @@
 # Domotica_AroaRaul
-Proyecto de una casa domotizada 
+Proyecto domótica con Home assistan 
 
-Proyecto esp32
+
