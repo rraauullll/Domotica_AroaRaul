@@ -1,5 +1,0 @@
-esphome:
-  name: esp8266-wemos-d1r2
-  friendly_name: ESP8266 WEMOS D1R2
-  platform: ESP8266
-  board: d1_mini
