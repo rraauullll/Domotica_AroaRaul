@@ -1,0 +1,69 @@
+esphome:
+  name: esp8266-wemos-d1r2
+  friendly_name: ESP8266 WEMOS D1R2
+  platform: ESP8266
+  board: d1_mini
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: "ShcnNRwqOoX89in3m4VV6yFlVGYDb27i37E6bGyPuLg="
+
+ota:
+  password: "539631849c3c9a642444b6a0b5b211ba"
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Esp8266-Iot2-D1R2"
+    password: "d95U4LPZCPR7"
+
+captive_portal:
+
+binary_sensor:
+  - platform: gpio
+    pin: GPIO5
+    name: "PIR SensorIOT2"
+    device_class: motion
+
+number:
+  - platform: template
+    name: Servo Control
+    min_value: -100
+    max_value: 100
+    step: 1
+    optimistic: true
+    set_action:
+      then:
+        - servo.write:
+            id: my_servo
+            level: !lambda 'return x / 100.0;'
+
+servo:
+   - id: my_servo
+     output: pwm_output
+
+# Example output platform
+# On ESP32, use ledc output
+output:
+  - platform: esp8266_pwm
+    id: pwm_output
+    pin: D6
+    frequency: 50 Hz
+
+sensor:
+  - platform: adc
+    pin: A0
+    id: 'LDR_1'
+    name: "ESP8266 WEMOS Luz"
+    update_interval: 10s
+    filters:
+      - multiply: 3.3
+
+  
