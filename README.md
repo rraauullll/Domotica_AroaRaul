@@ -5,3 +5,8 @@ Proyecto de una casa domotizada con Home assistan en una maqueta utilizando una 
 
 
 ![imaxemaqueta](https://user-images.githubusercontent.com/129267301/235864697-89e3fb6c-2a39-4380-b7a2-5a052db431b0.png)
+
+Este es un mapa mental del proyecto :
+
+
+![Captura de pantalla de 2023-05-03 10-11-45](https://user-images.githubusercontent.com/129267301/235864930-ecb755f3-7d93-44ec-b1d6-9655352b6694.png)
