@@ -10,3 +10,7 @@ Este es un mapa mental del proyecto :
 
 
 ![Captura de pantalla de 2023-05-03 10-11-45](https://user-images.githubusercontent.com/129267301/235864930-ecb755f3-7d93-44ec-b1d6-9655352b6694.png)
+
+Este es el flujo de trabajo que seguimos para el proyecto:
+
+![Captura de pantalla de 2023-04-17 12-10-16](https://user-images.githubusercontent.com/129267301/235865127-b0a749e2-33ee-407a-bcd8-89ee2488dc0a.png)
