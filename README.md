@@ -4,3 +4,4 @@ Proyecto de una casa domotizada con Home assistan en una maqueta utilizando una 
 
 
 
+![imaxemaqueta](https://user-images.githubusercontent.com/129267301/235864697-89e3fb6c-2a39-4380-b7a2-5a052db431b0.png)
