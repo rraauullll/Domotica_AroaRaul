@@ -1,0 +1,14 @@
+platform: state
+entity_id:
+  - binary_sensor.esp32aroaraul_boton
+from: "off"
+to: "on"
+
+service: number.set_value
+data:
+  value: "50"
+target:
+  area_id: taller
+  device_id: 'yourid'
+  entity_id: number.esp32aroaraul_servo_control
+

@@ -1,0 +1,17 @@
+alias: apagar luz
+description: ""
+trigger:
+  - platform: state
+    entity_id:
+      - binary_sensor.esp32_iot32_boton_aroaraul
+    from: "on"
+    to: "off"
+condition: []
+action:
+  - service: light.turn_off
+    data: {}
+    target:
+      entity_id: light.esp32_iot2_led_aroaraul
+mode: single 
+
+
