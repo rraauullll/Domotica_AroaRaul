@@ -19,4 +19,5 @@ Este es el flujo de trabajo que seguimos para el proyecto:
 
 
 Este es un resultado de la maqueta hecha con materiales reciclados:
-![IMG-20230508-WA0003](https://user-images.githubusercontent.com/129267301/236804414-aeba9125-964d-46d4-89b0-9879fdeaf401.jpg)
+
+![Sen titulo](https://user-images.githubusercontent.com/129267301/236804962-79d23dfc-6fa5-4ad1-b874-164f88b16936.png)
