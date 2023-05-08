@@ -3,7 +3,7 @@ Proyecto de una casa domotizada con Home assistan en una maqueta utilizando una 
 
 El primer paso fue crear un servidor Home assistan en una Raspberry Pi 400 depués aprender a conectar dispositivos en el. Acto seguido procedimos a conectar un ESP32 al cual le conectamos actuadores y sensores previamente, luego creamos la automatizaciones pertinentes en el Home assistan como apagar o encender la luz y montamos una maqueta de una casa finalmente colocamos los sensores y actuadores simulandola realidad. 
 
-
+Este es el diseño de la maqueta:
 ![imaxemaqueta](https://user-images.githubusercontent.com/129267301/235864697-89e3fb6c-2a39-4380-b7a2-5a052db431b0.png)
 
 Este es un mapa mental del proyecto :
@@ -14,3 +14,9 @@ Este es un mapa mental del proyecto :
 Este es el flujo de trabajo que seguimos para el proyecto:
 
 ![Captura de pantalla de 2023-04-17 12-10-16](https://user-images.githubusercontent.com/129267301/235865127-b0a749e2-33ee-407a-bcd8-89ee2488dc0a.png)
+
+
+
+
+Este es un resultado de la maqueta hecha con materiales reciclados:
+![IMG-20230508-WA0003](https://user-images.githubusercontent.com/129267301/236804414-aeba9125-964d-46d4-89b0-9879fdeaf401.jpg)
