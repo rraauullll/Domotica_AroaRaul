@@ -1,0 +1,6 @@
+ DHT11-GPIO4
+ Relé-GPIO26
+ LED-GPIO16
+ Botón-GPIO17
+ LCD-sda: GPIO21
+     scl: GPIO22
